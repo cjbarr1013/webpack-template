@@ -7,8 +7,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-    title: "Production",
-      template: "./src/template.html",
+      title: 'Production',
+      template: './src/template.html',
     }),
   ],
   output: {
@@ -20,15 +20,15 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader'],
       },
       {
         test: /\.html$/i,
-        loader: "html-loader",
+        loader: 'html-loader',
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: "asset/resource",
+        type: 'asset/resource',
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
