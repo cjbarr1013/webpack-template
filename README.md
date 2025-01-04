@@ -11,3 +11,8 @@ After cloning to your machine:
 ```
 npm install
 ```
+5. May have to run the following command to reinstall and configure eslint:
+```
+npm init @eslint/config@latest
+```
+6. Copy and paste eslint.config.mjs content from this directory into the new one
