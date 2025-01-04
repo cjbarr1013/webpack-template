@@ -23,13 +23,11 @@ export default [
     ignores: ['node_modules/*', 'dist/*'],
   },
   {
-    overrides: [
-      {
-        files: ['tests/**/*'],
-        env: {
-          jest: true,
-        },
+    files: ['**/*.test.js'],
+    languageOptions: {
+      globals: {
+        ...globals.jest,
       },
-    ],
+    },
   },
 ];
