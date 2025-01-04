@@ -22,4 +22,14 @@ export default [
   {
     ignores: ['node_modules/*', 'dist/*'],
   },
+  {
+    overrides: [
+      {
+        files: ['tests/**/*'],
+        env: {
+          jest: true,
+        },
+      },
+    ],
+  },
 ];
