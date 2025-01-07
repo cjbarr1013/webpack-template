@@ -1,4 +1,4 @@
-{
+const config = {
   "arrowParens": "always",
   "bracketSpacing": true,
   "embeddedLanguageFormatting": "auto",
@@ -13,3 +13,5 @@
   "semi": true,
   "singleQuote": true
 }
+
+export default config;
