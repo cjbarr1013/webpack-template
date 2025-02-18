@@ -10,13 +10,34 @@ html {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji';
   font-size: 16px;
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
   tab-size: 4;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 body {
-  margin: 0;
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
 }
 
 ol,
@@ -28,11 +49,15 @@ button,
 input,
 optgroup,
 select,
-textarea {
+textarea,
+label {
   font-family: inherit;
-  font-size: 100%;
+  font-size: inherit;
   line-height: 1.15;
-  margin: 0;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
 }
 
 button,
